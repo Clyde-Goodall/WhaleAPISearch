@@ -8,19 +8,20 @@
             </div>
             <div class=" flex-1 overflow-y-scroll">
 
-                <div v-for="whale of whales" class="border-b-2 border-gray-300 z-10 bg-gray-100 min-h-20 box-border p-5 text-lg font-sans mt-2 shadow-sm ">
+                <div v-for="whale of whales" class="border-b-2 border-gray-300 z-10 bg-gray-100 min-h-20 box-border p-5 font-sans mt-2 shadow-sm ">
                     <h1 class="text-2xl font-semibold capitalize mb-1">{{whale.species}}</h1></br>
                     <p>{{whale.description}}</p>
-  
+                        </br>   
      
                     <p>
-                        <a class="flex items-center w-20 text-blue-600" target="_blank" 
-                        v-bind:href="'https://www.google.com/maps/search/?api=1&query=' + whale.latitude + ',' + whale.longitude "><p>View</p>   <svg xmlns="http://www.w3.org/2000/svg" class=" ml-2 h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 9l3 3m0 0l-3 3m3-3H8m13 0a9 9 0 11-18 0 9 9 0 0118 0z" />
-                        </svg></a>
-                    </p>
-                     </br>
-                    <p class="text-sm text-white mt-2 bg-green-600 w-48 flex justify-center p-1 rounded-full">{{whale.sighted_at}}</p>
+                        <a class=" pl-2 pr-0 flex items-center w-20 text-blue-600 rounded-full border-blue-600 border w-48 flex justify-center p-1" target="_blank" 
+                        v-bind:href="'https://www.google.com/maps/search/?api=1&query=' + whale.latitude + ',' + whale.longitude "><p>View</p>   <svg xmlns="http://www.w3.org/2000/svg" class="ml-2 h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+                        </svg>
+                        </a>
+                        </p>
+                     <p class=" text-green-600 mt-2 border-green-600 border w-48 flex justify-center p-1 rounded-full">{{whale.sighted_at}}</p>
+                 
                  </div>
 
             </div>
