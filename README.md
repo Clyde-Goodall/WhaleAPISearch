@@ -1,5 +1,5 @@
 # whales
-
+Search through a whale sighting history API for... no reason!
 <img src="whale.gif" alt="ui gif">
 
 ## Build Setup
