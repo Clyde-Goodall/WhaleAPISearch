@@ -19,4 +19,4 @@ $ yarn start
 $ yarn generate
 ```
 
-
+Nuxt/Vue/Tailwind
